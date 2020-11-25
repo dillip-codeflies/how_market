@@ -13,17 +13,72 @@ export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
     {
-      title: 'Inbox',
-      url: '/folder/Inbox',
+      title: 'Home',
+      url: '/pages/home',
       icon: 'mail'
     },
     {
-      title: 'Outbox',
-      url: '/folder/Outbox',
+      title: 'Notifications',
+      url: '/pages/notifications',
       icon: 'paper-plane'
-    }
+    },
+    {
+      title: 'Messages',
+      url: '/pages/messages',
+      icon: 'mail'
+    },
+    {
+      title: 'Watching',
+      url: '/pages/watching',
+      icon: 'mail'
+    },
+    {
+      title: 'Saved',
+      url: '/pages/saved',
+      icon: 'mail'
+    },
+    {
+      title: 'Buy Again',
+      url: '/pages/buyagain',
+      icon: 'mail'
+    },
+    {
+      title: 'Purchases',
+      url: '/pages/purchases',
+      icon: 'mail'
+    },
+    {
+      title: 'Bids & Offers',
+      url: '/pages/offers',
+      icon: 'mail'
+    },
+    {
+      title: 'Selling',
+      url: '/pages/selling',
+      icon: 'mail'
+    },
+    {
+      title: 'Categories',
+      url: '/pages/offers',
+      icon: 'mail'
+    },
+    {
+      title: 'Deals',
+      url: '/pages/deals',
+      icon: 'mail'
+    },
+    {
+      title: 'Settings',
+      url: '/pages/settings',
+      icon: 'mail'
+    },
+    {
+      title: 'Help',
+      url: '/pages/help',
+      icon: 'mail'
+    },
+
   ];
-  // public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
   constructor(
     private platform: Platform,
@@ -43,7 +98,7 @@ export class AppComponent implements OnInit {
   
 
   ngOnInit() {
-    const path = window.location.pathname.split('folder/')[1];
+    const path = window.location.pathname.split('pages/')[1];
     if (path !== undefined) {
       this.selectedIndex = this.appPages.findIndex(page => page.title.toLowerCase() === path.toLowerCase());
     }

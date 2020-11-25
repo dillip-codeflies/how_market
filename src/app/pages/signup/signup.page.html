@@ -10,33 +10,30 @@
      <div class="logo-box">
        <img src="assets/logo.png" width="60%">
      </div>
-     <div class="login-form-box">
-       <div class="title-box">
-         <h3>Register</h3>
-       </div>
-       <ion-item>
-         <ion-label position="floating">Full name</ion-label>
-         <ion-input></ion-input>
-       </ion-item>
-       <ion-item>
-         <ion-label position="floating">Email address</ion-label>
-         <ion-input></ion-input>
-       </ion-item>
-       <ion-item>
-         <ion-label position="floating">Password</ion-label>
-         <ion-input></ion-input>
-       </ion-item>
-       <ion-button color="primary" class="login-btn">Sign Up</ion-button>
-     </div>
+     <form  #form="ngForm" (ngSubmit)="register(form)">
+      <div class="login-form-box">
+        <div class="title-box">
+          <h3>Register</h3>
+        </div>
+        <ion-item>
+          <ion-label position="floating">Full name</ion-label>
+          <ion-input  name="name" type="text" ngModel required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Email address</ion-label>
+          <ion-input name="email" type="email" ngModel required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input name="password" type="password" ngModel required></ion-input>
+        </ion-item>
+        <ion-button type="submit" [disabled]="form.invalid" color="primary" class="login-btn">Sign Up</ion-button>
+      </div>
+    </form>
      <div class="login-with-social">
+      <span>Already have an account?</span><br>
+      <ion-button [routerLink]="['/login']" color="basic" fill="outline" class="login-btn">Login</ion-button>
      </div>
    </div>
-
-   <style type="text/css">
-     .login-form-box {padding: 15px; }
-     .login-form-box .login-btn {margin: 20px 0 0; background-color: #C92724 !important; background-image: none !important; --ion-color-base: none !important; font-weight: 600; padding: 10px 30px; border-radius: 4px; }
-     .button-native{box-shadow: none !important;}
-   </style>
-
  </div>
 </ion-content>
