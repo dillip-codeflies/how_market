@@ -1,0 +1,41 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div id="container">
+    <div class="login-page">
+     <div class="logo-box">
+       <img src="assets/logo.png" width="60%">
+     </div>
+     <div class="login-form-box">
+       <div class="title-box">
+         <h3>Login</h3>
+       </div>
+       <ion-item>
+         <ion-label position="floating">Email address</ion-label>
+         <ion-input type="text" name="email" [(ngModle)]="email"></ion-input>
+       </ion-item>
+       <ion-item>
+         <ion-label position="floating">Password</ion-label>
+         <ion-input type="Password" [(ngModle)]="Password"></ion-input>
+       </ion-item>
+       <div class="signin-btns"></div>
+       <ion-button color="primary" class="login-btn">Login</ion-button><br><br>
+       <span>Don't have an account?</span><br>
+       <ion-button color="basic" fill="outline" class="signup-btn">Signup</ion-button>
+     </div>
+     <div class="login-with-social">
+      <p>Via Social Media</p> 
+       <ion-button fill="none" shape="rounded">
+        <ion-img src="assets/icon/google.png"></ion-img>
+       </ion-button>
+       <ion-button fill="none">
+        <ion-img src="assets/icon/facebook.png"></ion-img>
+       </ion-button>
+     </div>
+   </div>
+ </div>
+</ion-content>
