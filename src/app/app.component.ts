@@ -15,12 +15,12 @@ export class AppComponent implements OnInit {
     {
       title: 'Home',
       url: '/pages/home',
-      icon: 'mail'
+      icon: 'Home'
     },
     {
       title: 'Notifications',
       url: '/pages/notifications',
-      icon: 'paper-plane'
+      icon: 'notifications'
     },
     {
       title: 'Messages',
@@ -30,52 +30,52 @@ export class AppComponent implements OnInit {
     {
       title: 'Watching',
       url: '/pages/watching',
-      icon: 'mail'
+      icon: 'eye'
     },
     {
       title: 'Saved',
       url: '/pages/saved',
-      icon: 'mail'
+      icon: 'save'
     },
     {
       title: 'Buy Again',
       url: '/pages/buyagain',
-      icon: 'mail'
+      icon: 'arrow-redo'
     },
     {
       title: 'Purchases',
       url: '/pages/purchases',
-      icon: 'mail'
+      icon: 'bag-handle'
     },
     {
       title: 'Bids & Offers',
       url: '/pages/offers',
-      icon: 'mail'
+      icon: 'magnet'
     },
     {
       title: 'Selling',
       url: '/pages/selling',
-      icon: 'mail'
+      icon: 'pricetags'
     },
     {
       title: 'Categories',
       url: '/pages/offers',
-      icon: 'mail'
+      icon: 'list'
     },
     {
       title: 'Deals',
       url: '/pages/deals',
-      icon: 'mail'
+      icon: 'hourglass'
     },
     {
       title: 'Settings',
       url: '/pages/settings',
-      icon: 'mail'
+      icon: 'settings'
     },
     {
       title: 'Help',
       url: '/pages/help',
-      icon: 'mail'
+      icon: 'aperture'
     },
 
   ];
