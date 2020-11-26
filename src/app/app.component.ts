@@ -23,6 +23,11 @@ export class AppComponent implements OnInit {
       icon: 'notifications'
     },
     {
+      title: 'Login',
+      url: '/login',
+      icon: 'person'
+    },
+    {
       title: 'Messages',
       url: '/pages/messages',
       icon: 'mail'
