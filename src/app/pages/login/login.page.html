@@ -16,15 +16,15 @@
           <h3>Login</h3>
         </div>
         <ion-item>
-          <ion-label position="floating">Email address</ion-label>
-          <ion-input type="email" name="email" ngModel required></ion-input>
+          <ion-label position="floating">Username</ion-label>
+          <ion-input type="text" [(ngModel)]="username" name="username" required></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating">Password</ion-label>
-          <ion-input type="Password" name="Password" ngModel required></ion-input>
+          <ion-input type="Password" [(ngModel)]="password" name="password" required></ion-input>
         </ion-item>
         <div class="signin-btns"></div>
-        <ion-button type="submit" [disabled]="form.invalid" color="primary" class="login-btn">Login</ion-button><br><br>
+        <ion-button type="submit" (click)="login()" color="primary" class="login-btn">Login</ion-button><br><br>
         <span>Don't have an account?</span><br>
         <!-- <ion-router-link href="/signup" class="signup-btn">signup</ion-router-link> -->
         <ion-button [routerLink]="['/signup']" color="basic" fill="outline" class="signup-btn">Signup</ion-button>
